@@ -1,0 +1,24 @@
+{
+  "name": "crypt_fest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node init && next dev --turbopack",
+    "build": "node init && next build --turbopack",
+    "start": "node init && next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "apexcharts": "^5.3.5",
+    "axios": "^1.12.2",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-apexcharts": "^1.7.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3"
+  }
+}

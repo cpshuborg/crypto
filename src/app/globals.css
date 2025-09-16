@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+  --pink-color: #f82bffaf;
+  --pink-color2: #ff00b3;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height:auto;
+font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: -35%;
+  left: -5%;
+  width: 60vmax;
+  height: 60vmax;
+  background: radial-gradient(
+    circle,
+    var(--pink-color) 0%,
+    rgba(212, 42, 255, 0.7) 20%,
+    rgba(212, 42, 255, 0.4) 40%,
+    rgba(212, 42, 255, 0.1) 60%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(20px);
+}
+body::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -26%;
+  width: 50vmax;
+  height: 50vmax;
+  background: radial-gradient(
+    circle,
+    var(--pink-color2) 0%,
+    rgba(255, 42, 255, 0.7) 20%,
+    rgba(255, 0, 255, 0.747) 40%,
+    rgba(212, 42, 255, 0.1) 60%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(15px);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

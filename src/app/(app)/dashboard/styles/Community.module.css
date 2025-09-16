@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+.avatarStack {
+  position: relative; 
+  width: 135px;
+  height: 92px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+.avatar1 { width: 45px; height: 45px; left: 0; top: 9px; }
+.avatar2 { width: 22px; height: 22px; left: 53px; top: 5px; }
+.avatar3 { width: 31px; height: 31px; left: 98px; top: 0px; }
+.avatar4 { width: 31px; height: 31px; left: 104px; top: 48px; }
+.avatar5 { width: 31px; height: 31px; left: 8px; top: 60px; }
+.avatar6 { width: 55px; height: 55px; left: 38px; top: 34px; }
+.avatar7 { width: 25px; height: 25px; left: 72px; top: 29px; }
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.paragraph {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.joinButton {
+  padding: 10px 24px;
+  background: #2B2B2B;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 250px;
+}
+
+.joinButton:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: white;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-right: 4px;
+  transition: max-height 0.3s ease;
+}
+.list.scrollable {
+  max-height: 100%; 
+  overflow-y: auto;
+  padding-right: 10px; 
+}
+.coinRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.value {
+  font-size: 17px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.progressBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  border-radius: 6px;
+}
+.percent {
+  font-weight: 500;
+  font-size: 15px;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.viewAll {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background: #2b2b2b;
+  transition: background 0.2s;
+  margin-top: 20px;
+}
+.viewAll:hover {
+  background: #3b3b3b;
+}
+.list.scrollable::-webkit-scrollbar {
+  width: 10px; 
+}
+.list.scrollable::-webkit-scrollbar-track {
+  background: transparent; 
+  margin: 4px 0; 
+  border-radius: 4px;
+}
+.list.scrollable::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+  border: 2px solid transparent; 
+  background-clip: padding-box; 
+}
+.list.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #777;
+  border: 1px solid transparent; 
+}

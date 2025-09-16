@@ -1,0 +1,163 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  color: white;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  flex: 1; 
+}
+
+.statIconCont {
+  width: 60px;
+  height: 60px;
+  background: #b0b0b025;
+  border-radius: 20%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+}
+
+.statTitle {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+
+}
+
+.statAmount {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.currencySelectWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.currencySelect {
+  position: relative;
+  padding: 6px 10px 6px 36px;
+  border-radius: 16px;
+  border: none;
+  background: #00000005;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  appearance: auto;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  width: 90px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.selectedCurrency {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding:  6px 30px 6px 36px;;
+  border-radius: 16px;
+  background: #0000004b;
+  pointer-events: none;
+  z-index: 1;
+}
+.dropdownArrow {
+  margin-left: 5px;
+}
+.currencyIcon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.currencySelect option {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 6px 12px;
+}
+
+.candlesButton {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #2b2b2b00;
+  color: white;
+  cursor: pointer;
+}
+
+.timeButtons {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.timeButton {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #2b2b2b;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chartContainer {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chartPlaceholder {
+  color: #888;
+  font-size: 16px;
+}
